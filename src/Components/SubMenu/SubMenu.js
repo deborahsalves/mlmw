@@ -1,10 +1,10 @@
 import React from "react";
 import './SubMenu.css';
 
-export const SubMenu = () => {
+export const SubMenu = (props) => {
     return(
         <nav className="sub-menu">
-            SubMenu
+            {props.selectedGame.length === 0 ? 'Please select a game' : props.selectedGame}
         </nav>
     )
 } 

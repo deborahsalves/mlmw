@@ -1,6 +1,7 @@
 .main-menu{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1rem;
     background-color: var(--yellowish-olive);
 }
