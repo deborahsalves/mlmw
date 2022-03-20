@@ -1,6 +1,7 @@
 .main-menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 1rem;
     background-color: var(--yellowish-olive);
@@ -10,4 +11,4 @@ label{
 }
 select{
     padding: 10px;
-} 
+}

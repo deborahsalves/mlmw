@@ -8,7 +8,7 @@ export const App = () => {
     const [ selectedGame, setSelectedGame ] = useState('fill-the-gap');
     // const [ firstSelectedData, setfirstSelectedData ] = useState('word');
     // const [ secondSelectedData, setsecondSelectedData ] = useState('meaning');
-    const [ selectedDataPair, setSelectedDataPair ] = useState(['meaning', 'word']);
+    const [ selectedDataPair, setSelectedDataPair ] = useState(['word', 'meaning']);
 
     const handleGameSelect = (gameName) => {
         setSelectedGame(gameName)

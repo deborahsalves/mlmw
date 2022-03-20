@@ -1,30 +1,13 @@
 import React from 'react';
 import './SubMenu.css';
 
-const miniDic = [
-    {
-        id: 1,
-        word: 'Wohnung',
-        meaning: 'apartamento',
-        gender: 'die'
-    },
-    {
-        id: 2,
-        word: 'Haus',
-        meaning: 'casa',
-        gender: 'das'
-    },
-];
-
 export const Submenu = (props) => {
     const handleChange = (event) => {
         const whichSubmenu = event.target.name;
         const selectedData = event.target.value;
         props.handleDataPairSelect(whichSubmenu, selectedData);
     };
-    console.log(`data on submenu render: ${props.selectedDataPair}`);
-    console.log(`data1 on submenu render: ${props.selectedDataPair[0]}`);
-    console.log(`data2 on submenu render: ${props.selectedDataPair[1]}`);
+
     return(
         <nav className='sub-menu'>
         <form id='submenu' className='sub-menu form'>
