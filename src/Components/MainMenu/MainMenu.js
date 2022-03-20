@@ -1,21 +1,16 @@
 import React, {useState} from "react";
 import './MainMenu.css';
-import { SelectGame } from '../SelectGame/SelectGame';
-import { SubMenu } from '../SubMenu/SubMenu';
+import { SelectGame } from "../SelectGame/SelectGame";
 
-export const MainMenu = () => {
-    const [selectedGame, setSelectedGame] = useState("");
-
-    const handleSelect = (e) => {
-        const selectedGame = e.target.value; 
-        setSelectedGame(selectedGame);
-    }
+export const MainMenu = (props) => {
+    const handleChange = (event) => {
+        props.handleGameSelect(event.target.value);
+    };
 
     return(
         <nav className="main-menu">
-            <SelectGame handleSelect={handleSelect}/>
+            <SelectGame handleChange={handleChange}/>
             <div className="profile-data">WillBeProfile</div>
-            <SubMenu selectedGame={selectedGame}/>
         </nav>
     )
 }

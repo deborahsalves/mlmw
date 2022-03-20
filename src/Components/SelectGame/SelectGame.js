@@ -14,13 +14,16 @@ const gameOptions = [
     }
 ]
 
-export const SelectGame = ( {handleSelect} ) => {
+export const SelectGame = (props) => {
     return(
-        <select className="select-game" defaultValue="" onChange={handleSelect}>
-            <option name="default" value="default">Select a game</option>
-            {gameOptions.map((option) => (
-                <option name={option.name} key={option.name} value={option.value}>{option.label}</option>
-            ))}
-        </select>
+        <form id='mainmenu'>
+            <select className="select-game" defaultValue="" onChange={props.handleChange}>
+                <label for="game-selection" name="game-selection" value="Select your game"></label>
+                {/* <option name="default" value="default">Select a game</option> */}
+                {gameOptions.map((option) => (
+                    <option id={option.name} name={option.name} key={option.name} value={option.value}>{option.label}</option>
+                ))}
+            </select>
+        </form>
     )
 }

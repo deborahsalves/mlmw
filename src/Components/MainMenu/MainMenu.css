@@ -5,3 +5,9 @@
     padding: 1rem;
     background-color: var(--yellowish-olive);
 }
+label{
+    display: block;
+}
+select{
+    padding: 10px;
+} 

@@ -1,6 +1,5 @@
 .select-game{
     display: inline-flex;
-    width: 50%;
     color: var(--dark-gray);
     background-color: var(--floral-white);
 }
