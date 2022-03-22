@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './GameBoard.css';
 import { data } from '../../api/data';
+import {RandomWord} from "../RandomWord/RandomWord";
 
 export const GameBoard = (props) => {
     const [ filteredData, setFilteredData ] = useState([]);
@@ -44,7 +45,7 @@ export const GameBoard = (props) => {
             <h1>{props.selectedGame}</h1>
             <h2>{props.selectedDataPair[0]}</h2>
             <h2>{props.selectedDataPair[1]}</h2>
-            <ul>
+            {/* <ul>
                 {filteredData.length !==0 && filteredData.map((vocab) => {
                     const firstDataColumn = props.selectedDataPair[0];
                     const secondDataColumn = props.selectedDataPair[1];
@@ -55,7 +56,11 @@ export const GameBoard = (props) => {
                         </li>
                     )
                 })}
-            </ul>
+            </ul> */}
+
+            {props.selectedGame === 'tic-tac-toe' && <p>selectedGame === 'tic-tac-toe'</p>}
+            {props.selectedGame === 'memory-game' && <p>selectedGame === 'memory-game'</p>}
+            {props.selectedGame === 'random-word' && <RandomWord />}
         </section>
     )
 }

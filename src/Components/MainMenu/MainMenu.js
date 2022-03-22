@@ -9,7 +9,7 @@ export const MainMenu = (props) => {
 
     return(
         <nav className="main-menu">
-            <SelectGame handleChange={handleChange}/>
+            <SelectGame handleChange={handleChange} selectedGame={props.selectedGame}/>
             <div className="profile-data">WillBeProfile</div>
         </nav>
     )

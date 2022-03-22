@@ -1,0 +1,7 @@
+.random-word h2 {
+    margin: 1rem 0;
+    padding: 2rem;
+    font-size: 3rem;
+    background-color: var(--blueish-gray);
+    color: var(--floral-white);
+}

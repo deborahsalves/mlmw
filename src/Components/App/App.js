@@ -5,7 +5,9 @@ import { Submenu } from '../SubMenu/SubMenu';
 import { GameBoard } from '../GameBoard/GameBoard';
 
 export const App = () => {
-    const [ selectedGame, setSelectedGame ] = useState('fill-the-gap');
+    const [ selectedGame, setSelectedGame ] = useState('random-word');
+
+    useEffect(() => {}, [selectedGame]);
     // const [ firstSelectedData, setfirstSelectedData ] = useState('word');
     // const [ secondSelectedData, setsecondSelectedData ] = useState('meaning');
     const [ selectedDataPair, setSelectedDataPair ] = useState(['word', 'meaning']);
