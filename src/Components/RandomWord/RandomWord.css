@@ -1,7 +1,26 @@
 .random-word h2 {
     margin: 1rem 0;
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: var(--blueish-gray);
     color: var(--floral-white);
+}
+
+.word-meaning{
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    background-color: var(--floral-white);
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-kerning: 2;
+    color: var(--dark-gray);
+}
+
+.word-meaning.isVisible{
+    border: 0;
+    background-color: var(--lemon-chiffon);
+    font-weight: bold;
+    font-kerning: 1;
+    color: var(--dark-gray);
 }

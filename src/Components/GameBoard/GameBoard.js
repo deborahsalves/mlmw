@@ -7,7 +7,6 @@ export const GameBoard = (props) => {
     const [ filteredData, setFilteredData ] = useState([]);
     // const [ renderData, setRenderData ] = useState([]);
 
-    console.log(data)
     useEffect(() => {
         setFilteredData(() => {
             console.log('entered setFilteredData');
@@ -15,7 +14,6 @@ export const GameBoard = (props) => {
             const firstSelected = data.filter(vocab => vocab.hasOwnProperty(currentFirstSelection));
             const currentSecondSelection = props.selectedDataPair[1];
             const secondSelected = firstSelected.filter(vocab => vocab.hasOwnProperty(currentSecondSelection));
-            secondSelected.map(item => console.log(item));
             return secondSelected;
         });     
     }, [props.selectedDataPair]);
