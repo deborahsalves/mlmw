@@ -1,8 +1,14 @@
 :root{
     --lemon-chiffon: #FFFACD;
     --dark-gray: #333333;
+    --medium-gray: #989699;
     --light-gray: #CCCCCC;
     --blueish-gray: #132020;
-    --yellowish-olive: #999900;
+    --slate-blue: #65928b;
+    --indian-red: #C7575C;
+/*    --yellowish-olive: #999900; */
+    --yellow-green: #92b944;
+    --light-tan: #d5c69b;
     --floral-white: #FFFAF0;
+    /* https://64.media.tumblr.com/b4e6c70044739058f399f8a2257e4dd0/tumblr_p9fxnjeNQR1uth4pxo5_1280.jpg */
 }

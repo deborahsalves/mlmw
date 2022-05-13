@@ -45,9 +45,12 @@ export const App = () => {
             <MainMenu
                 selectedGame={selectedGame} 
                 handleGameSelect={handleGameSelect}/>
-            <Submenu
-                selectedDataPair={selectedDataPair} 
-                handleDataPairSelect={handleDataPairSelect}/>
+            {
+                selectedGame !== 'random-word' &&
+                <Submenu
+                    selectedDataPair={selectedDataPair} 
+                    handleDataPairSelect={handleDataPairSelect}/>
+            }
             <GameBoard 
                 selectedGame={selectedGame}
                 selectedDataPair={selectedDataPair}/>

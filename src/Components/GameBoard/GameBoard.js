@@ -18,43 +18,13 @@ export const GameBoard = (props) => {
         });     
     }, [props.selectedDataPair]);
 
-    // useEffect(() => {
-    //     setRenderData(() => {
-    //         const propertiesToRender = [];
-    //         filteredData.map((vocab) => {
-    //             // pra cada key/property do vocab 
-    //             for (const [key, value] of Object.entries(vocab)) {
-    //                 console.log(`vocab no entries: ${vocab}`)
-    //                 console.log(`key no entries: ${key}`)
-    //                 console.log(`value no entries: ${value}`)
-    //                 if (props.selectedDataPair.includes(key)) {
-    //                     console.log('it does');
-    //                     propertiesToRender.push(key);
-    //                 }
-    //             }
-    //             return false;
-    //         });
-    //         console.log(`propertiesToRender: ${propertiesToRender}`)
-    //     });
-    // }, [filteredData]);
-
     return(
         <section className="game-board">
-            <h1>{props.selectedGame}</h1>
+            {/* <h1>{props.selectedGame}</h1>
             <h2>{props.selectedDataPair[0]}</h2>
-            <h2>{props.selectedDataPair[1]}</h2>
-            {/* <ul>
-                {filteredData.length !==0 && filteredData.map((vocab) => {
-                    const firstDataColumn = props.selectedDataPair[0];
-                    const secondDataColumn = props.selectedDataPair[1];
-                    return (
-                        <li key={vocab.word+1} id={vocab.word}>
-                            first: {vocab[firstDataColumn]}<br/>
-                            second: {vocab[secondDataColumn]}
-                        </li>
-                    )
-                })}
-            </ul> */}
+            <h2>{props.selectedDataPair[1]}</h2> */}
+            <p>This project is still under development. As of May 22, it is not yet connected to a database, so you can't yet login and add your own notes/words. You are welcome to play with mine, though :)</p>
+            <p>The games are also not ready to be publicly available. If you have suggestions, contact me at <a href="mailto:salves.deborah@gmail.com">salves.deborah@gmail.com</a></p>
 
             {props.selectedGame === 'tic-tac-toe' && <p>selectedGame === 'tic-tac-toe'</p>}
             {props.selectedGame === 'memory-game' && <p>selectedGame === 'memory-game'</p>}

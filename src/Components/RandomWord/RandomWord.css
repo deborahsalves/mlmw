@@ -2,8 +2,8 @@
     margin: 1rem 0;
     padding: 2rem;
     font-size: 2rem;
-    background-color: var(--blueish-gray);
-    color: var(--floral-white);
+    background-color: var(--light-tan);
+    color: var(--dark-gray);
 }
 
 .word-meaning{
